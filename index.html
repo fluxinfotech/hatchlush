@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hatchlush | Eggs & Chickens</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Hatchlush</h1>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-on-scroll fade-in">Welcome to Hatchlush</h1>
+            <p class="animate-on-scroll fade-in">Premium quality eggs and chickens raised with care</p>
+            <a href="#products" class="btn animate-on-scroll bounce">Explore Our Products</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2 class="section-title animate-on-scroll fade-in">Our Products</h2>
+        
+        <div class="product-category">
+            <h3 class="animate-on-scroll fade-in">Farm Fresh Eggs</h3>
+            <div class="product-container">
+                <div class="product-card animate-on-scroll slide-in-left">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1569127959161-2b1297b2d9a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Brown Eggs">
+                    </div>
+                    <div class="product-info">
+                        <h4>Brown Eggs</h4>
+                        <p>Farm-fresh brown eggs from free-range hens</p>
+                        <p class="price">$4.99 / dozen</p>
+                        <!-- <button class="btn-small">Add to Cart</button> -->
+                    </div>
+                </div>
+                
+                <div class="product-card animate-on-scroll slide-in-left" data-delay="200">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1598965675045-45c5e72c7d05?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="White Eggs">
+                    </div>
+                    <div class="product-info">
+                        <h4>White Eggs</h4>
+                        <p>Premium white eggs from our quality hens</p>
+                        <p class="price">$4.49 / dozen</p>
+                        <!-- <button class="btn-small">Add to Cart</button> -->
+                    </div>
+                </div>
+                
+                <div class="product-card animate-on-scroll slide-in-left" data-delay="400">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1587486913049-53fc88980cfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Organic Eggs">
+                    </div>
+                    <div class="product-info">
+                        <h4>Organic Eggs</h4>
+                        <p>Certified organic eggs from pasture-raised hens</p>
+                        <p class="price">$6.99 / dozen</p>
+                        <!-- <button class="btn-small">Add to Cart</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-category">
+            <h3 class="animate-on-scroll fade-in">Quality Chickens</h3>
+            <div class="product-container">
+                <div class="product-card animate-on-scroll slide-in-right">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Whole Chicken">
+                    </div>
+                    <div class="product-info">
+                        <h4>Whole Chicken</h4>
+                        <p>Farm-raised whole chicken, ready for cooking</p>
+                        <p class="price">$12.99 / each</p>
+                        <button class="btn-small">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card animate-on-scroll slide-in-right" data-delay="200">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Chicken Breast">
+                    </div>
+                    <div class="product-info">
+                        <h4>Chicken Breast</h4>
+                        <p>Boneless, skinless chicken breast fillets</p>
+                        <p class="price">$8.99 / lb</p>
+                        <button class="btn-small">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card animate-on-scroll slide-in-right" data-delay="400">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1518492104633-130d0cc84637?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Live Chickens">
+                    </div>
+                    <div class="product-info">
+                        <h4>Live Chickens</h4>
+                        <p>Healthy laying hens for your backyard</p>
+                        <p class="price">$25.99 / each</p>
+                        <button class="btn-small">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text animate-on-scroll fade-in">
+                <h2>About Our Farm</h2>
+                <p>Farm Fresh Poultry has been family-owned and operated since 1985. Our commitment to quality and sustainable farming practices ensures that our chickens are raised in a humane environment with access to open pastures.</p>
+                <p>We take pride in providing our community with the freshest eggs and highest quality chicken products. Our hens are fed a natural diet without antibiotics or hormones, resulting in eggs and meat that are both nutritious and delicious.</p>
+            </div>
+            <div class="about-image animate-on-scroll slide-in-right">
+                <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Our Farm">
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2 class="section-title animate-on-scroll fade-in">What Our Customers Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial animate-on-scroll fade-in">
+                <div class="testimonial-text">
+                    <p>"The eggs from Farm Fresh Poultry are simply amazing! The yolks are so vibrant and the taste is incomparable to store-bought eggs."</p>
+                </div>
+                <div class="testimonial-author">
+                    <p>- Sarah Johnson</p>
+                </div>
+            </div>
+            
+            <div class="testimonial animate-on-scroll fade-in" data-delay="200">
+                <div class="testimonial-text">
+                    <p>"We've been buying our chickens from this farm for years. The quality is consistent and the customer service is excellent."</p>
+                </div>
+                <div class="testimonial-author">
+                    <p>- Michael Thompson</p>
+                </div>
+            </div>
+            
+            <div class="testimonial animate-on-scroll fade-in" data-delay="400">
+                <div class="testimonial-text">
+                    <p>"As a chef, I'm very particular about my ingredients. The poultry from this farm exceeds my expectations every time."</p>
+                </div>
+                <div class="testimonial-author">
+                    <p>- Chef David Rodriguez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title animate-on-scroll fade-in">Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info animate-on-scroll slide-in-left">
+                <h3>Visit Our Farm</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 1234 Country Road, Farmville, CA 98765</p>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@farmfreshpoultry.com</p>
+                <h3>Farm Hours</h3>
+                <p>Monday - Saturday: 8am - 6pm</p>
+                <p>Sunday: 10am - 4pm</p>
+            </div>
+            
+            <div class="contact-form animate-on-scroll slide-in-right">
+                <h3>Send Us a Message</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Farm Fresh Poultry</h2>
+                <p>Quality eggs and chickens since 1985</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Farm Fresh Poultry. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
