@@ -99,34 +99,42 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add to Cart Button Animation
     const addToCartButtons = document.querySelectorAll('.btn-small');
-    
-    addToCartButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // Create a ripple effect
-            const ripple = document.createElement('span');
-            ripple.classList.add('ripple');
-            this.appendChild(ripple);
-            
-            // Get position
-            const x = e.clientX - e.target.getBoundingClientRect().left;
-            const y = e.clientY - e.target.getBoundingClientRect().top;
-            
-            // Set position
-            ripple.style.left = `${x}px`;
-            ripple.style.top = `${y}px`;
-            
-            // Remove after animation
-            setTimeout(() => {
-                ripple.remove();
-            }, 600);
-            
-            // Show added to cart message
-            const productName = this.closest('.product-info').querySelector('h4').textContent;
-            alert(`${productName} added to cart!`);
-        });
+
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Create a ripple effect
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+        this.appendChild(ripple);
+        
+        // Get position
+        const x = e.clientX - e.target.getBoundingClientRect().left;
+        const y = e.clientY - e.target.getBoundingClientRect().top;
+        
+        // Set position
+        ripple.style.left = `${x}px`;
+        ripple.style.top = `${y}px`;
+        
+        // Remove after animation
+        setTimeout(() => {
+            ripple.remove();
+        }, 600);
+        
+        // Get product name
+        const productName = this.closest('.product-info').querySelector('h4').textContent;
+        
+        // WhatsApp message
+        const message = encodeURIComponent(`Hi, I want to order: ${productName}`);
+        const phoneNumber = "918369693745";
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+        
+        // Redirect to WhatsApp
+        window.open(whatsappURL, '_blank');
     });
+});
+
 
     // Egg Animation
     const createEggAnimation = () => {
